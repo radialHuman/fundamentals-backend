@@ -2123,3 +2123,149 @@
 - Coarse-Grained Locking
 - Optimistic Concurrency Control (OCC)
 - Pessimistic Concurrency Control (PCC)
+
+## AWS
+
+
+### **Core AWS Services**
+- **Compute**: EC2, Lambda, ECS, EKS, Batch, Fargate, Elastic Beanstalk
+- **Storage**: S3, EBS, EFS, FSx, Storage Gateway, Glacier, Snowball
+- **Networking**: VPC, Subnets, Route Tables, Internet Gateway, NAT Gateway, VPC Peering, Transit Gateway, Direct Connect, Route 53, Global Accelerator, CloudFront
+- **Databases**: RDS, DynamoDB, Redshift, ElastiCache, DocumentDB, Neustar, Aurora
+- **Security & Identity**: IAM, Cognito, Secrets Manager, Systems Manager (SSM), KMS, CloudHSM, Shield, WAF, GuardDuty, Inspector, Macie
+- **Monitoring & Logging**: CloudWatch, CloudTrail, X-Ray, EventBridge, Systems Manager (SSM), Managed Services
+- **Application Services**: API Gateway, Step Functions, EventBridge, SNS, SQS, Pinpoint, AppSync, Elastic Load Balancing (ALB, NLB, Gateway Load Balancer)
+- **Management & Governance**: AWS Config, Organizations, Service Catalog, CloudFormation, AWS Control Tower, AWS Systems Manager (SSM), AWS Backup, AWS License Manager
+- **Analytics**: Athena, Glue, Kinesis, Data Pipeline, QuickSight, Textract, Comprehend, Rekognition
+- **Machine Learning**: SageMaker, Lex, Polly, Forecast, Personalize
+- **Serverless**: Lambda, API Gateway, Step Functions, EventBridge, SNS, SQS, DynamoDB, CloudFront, CloudWatch
+- **Hybrid & On-Premise**: AWS Outposts, Snowball, Storage Gateway, Direct Connect, VPN
+- **Containers**: ECS, EKS, Fargate, AppMesh, ECR
+- **DevOps**: CodePipeline, CodeBuild, CodeDeploy, CodeCommit, CodeStar, CloudFormation, AWS Systems Manager (SSM), AWS Backup, AWS License Manager
+- **Cost & Optimization**: Cost Explorer, Trusted Advisor, AWS Budgets, AWS Organizations, AWS Pricing Calculator, AWS Compute Optimizer
+- **Disaster Recovery**: AWS Backup, AWS Storage Gateway, AWS Snowball, AWS Direct Connect, AWS Global Accelerator, AWS Route 53, AWS CloudFormation, AWS Systems Manager (SSM)
+
+### **Underlying Systems Concepts**
+- **Scalability**: Auto Scaling, Load Balancing, Elastic Load Balancing (ALB/NLB), CloudFront, Global Accelerator
+- **High Availability**: Multi-AZ, Multi-Region, Cross-Region Replication, Read Replicas, Failover
+- **Fault Tolerance**: Redundancy, Backup & Restore, Disaster Recovery, Multi-AZ, Multi-Region
+- **Security**: IAM, KMS, Encryption (at rest and in transit), Security Groups, NACLs, WAF, Shield, GuardDuty, Macie
+- **Networking**: VPC, Subnets, Route Tables, Internet Gateway, NAT Gateway, VPC Peering, Transit Gateway, Direct Connect, Route 53, CloudFront
+- **Data Management**: Data Partitioning, Data Replication, Data Backup, Data Archival, Data Lifecycle Management
+- **Monitoring & Logging**: CloudWatch, CloudTrail, X-Ray, EventBridge, Systems Manager (SSM), Managed Services
+- **Cost Optimization**: Cost Explorer, Trusted Advisor, AWS Budgets, AWS Organizations, AWS Pricing Calculator, AWS Compute Optimizer
+- **Automation**: CloudFormation, AWS Systems Manager (SSM), AWS Backup, AWS License Manager
+- **Event-Driven Architecture**: SNS, SQS, EventBridge, Lambda, Step Functions
+- **Microservices Architecture**: ECS, EKS, Fargate, AppMesh, API Gateway, Lambda
+- **Serverless Architecture**: Lambda, API Gateway, Step Functions, DynamoDB, S3, CloudFront
+- **Hybrid Cloud**: AWS Outposts, Snowball, Storage Gateway, Direct Connect, VPN
+- **Disaster Recovery**: AWS Backup, AWS Storage Gateway, AWS Snowball, AWS Direct Connect, AWS Global Accelerator, AWS Route 53, AWS CloudFormation, AWS Systems Manager (SSM)
+
+**Compute**
+
+*   EC2 (Elastic Compute Cloud) - Virtualization, OS Management, Networking, Security Groups
+*   EC2 Auto Scaling - Scaling, Load Balancing, Health Checks, Group Management
+*   Elastic Load Balancing (ELB/ALB/NLB) - Load Balancing, Proxies, Health Checks, TCP/UDP Routing
+*   Lambda - Serverless Computing, Event-Driven Architecture, Containerization (underlying)
+*   ECS (Elastic Container Service) - Container Orchestration, Docker, Task Management
+*   EKS (Elastic Kubernetes Service) - Kubernetes, Container Orchestration, Cluster Management
+*   Fargate - Serverless Containers, Docker, Isolation
+*   Lightsail - Simplified Virtual Machines, Basic Networking, Managed Services
+*   Batch - Batch Processing, Resource Management, Job Scheduling
+
+**Storage**
+
+*   S3 (Simple Storage Service) - Object Storage, Distributed Systems, Data Durability, Consistency Models
+*   EBS (Elastic Block Storage) - Block Storage, RAID, Volume Management, Performance Tiers
+*   EFS (Elastic File System) - Network File System, Distributed File System, POSIX Compliance
+*   Glacier/Glacier Deep Archive - Archival Storage, Data Lifecycle Management, Cost Optimization
+*   Storage Gateway - Hybrid Cloud Storage, Data Replication, File System Caching
+*   FSx for Windows File Server - Managed Windows File Server, SMB, Active Directory Integration
+*   FSx for Lustre - High-Performance Computing File System, Parallel Processing
+*   FSx for OpenZFS - Enterprise-Grade File System, Data Integrity, Snapshots
+
+**Database**
+
+*   RDS (Relational Database Service) - Managed Databases, Replication, Backups, Failover
+*   DynamoDB - NoSQL Database, Key-Value Store, Wide-Column Store, Distributed Systems
+*   Aurora - MySQL/PostgreSQL-Compatible, Distributed Database, Performance Optimization
+*   Redshift - Data Warehouse, Columnar Storage, MPP (Massively Parallel Processing)
+*   ElastiCache - In-Memory Data Cache, Redis, Memcached, Caching Strategies
+*   Neptune - Graph Database, RDF, Property Graphs, Relationships
+*   Timestream - Time Series Database, Time-Based Data, Analytics
+*   DocumentDB - MongoDB-Compatible, NoSQL, Document Storage
+
+**Networking & Content Delivery**
+
+*   VPC (Virtual Private Cloud) - Networking, Subnets, Routing, Security Groups, VPNs
+*   Route 53 - DNS, Domain Registration, Traffic Management, Health Checks
+*   CloudFront - CDN (Content Delivery Network), Caching, Edge Computing
+*   Direct Connect - Dedicated Network Connection, Hybrid Cloud Connectivity
+*   Transit Gateway - Network Interconnect, Hub-and-Spoke Networking
+*   VPN Gateway - Site-to-Site VPN, Remote Access VPN
+*   AWS Global Accelerator - Global Network Infrastructure, Traffic Routing, Performance Optimization
+
+**Management & Governance**
+
+*   CloudWatch - Monitoring, Logging, Metrics, Alarms
+*   CloudTrail - Auditing, API Logging, Compliance
+*   CloudFormation - Infrastructure as Code, Template-Based Provisioning
+*   CloudFront Labs - Testing and experimentation of CloudFront configurations.
+*   Systems Manager - Configuration Management, Patching, Automation
+*   IAM (Identity and Access Management) - Authentication, Authorization, Role-Based Access Control
+*   Organizations - Multi-Account Management, Centralized Policy Enforcement
+*   Control Tower - Automated AWS Account Setup and Governance
+*   Service Catalog - Self-Service Provisioning, Approved Resources
+*   Trusted Advisor - Best Practice Recommendations, Security Assessments
+
+**Analytics**
+
+*   Athena - Serverless Query Service, SQL, Data Lake Querying
+*   EMR (Elastic MapReduce) - Big Data Processing, Hadoop, Spark, Hive
+*   Kinesis - Real-Time Data Streaming, Data Pipelines
+*   QuickSight - Business Intelligence, Data Visualization
+*   SageMaker - Machine Learning, Model Training, Deployment
+*   Glue - ETL (Extract, Transform, Load), Data Catalog
+
+**Developer Tools**
+
+*   CodeCommit - Version Control, Git
+*   CodeBuild - Continuous Integration, Build Automation
+*   CodeDeploy - Continuous Deployment, Automated Rollouts
+*   CodePipeline - Continuous Delivery, Workflow Automation
+*   CodeStar - Collaborative Development, Shared Workspaces
+
+**Security, Identity & Compliance**
+
+*   WAF (Web Application Firewall) - Web Application Security, OWASP Top 10 Protection
+*   Shield - DDoS Protection, Mitigation
+*   GuardDuty - Threat Detection, Anomaly Detection
+*   Inspector - Vulnerability Assessments, Automated Security Checks
+*   Macie - Data Security, Sensitive Data Discovery
+*   Cognito - Identity Management, Authentication, Authorization
+*   Key Management Service (KMS) - Encryption, Key Management
+*   Certificate Manager (ACM) - SSL/TLS Certificates
+
+**Application Integration**
+
+*   SQS (Simple Queue Service) - Message Queuing, Decoupled Architecture
+*   SNS (Simple Notification Service) - Pub/Sub Messaging, Notifications
+*   API Gateway - API Management, Request Routing, Authentication
+*   Step Functions - Workflow Orchestration, State Machines
+*   EventBridge - Event-Driven Architecture, Serverless Event Routing
+
+**Other Important Services**
+
+*   Outposts - Hybrid Cloud, On-Premises AWS Infrastructure
+*   Local Zones - Low Latency Edge Locations, Improved Performance
+*   Forecast - Time Series Forecasting, Predictive Analytics
+*   Lex - Conversational AI, Chatbots
+*   Transcribe - Speech-to-Text
+*   Translate - Machine Translation
+*   Rekognition - Image and Video Analysis
+*   Comprehend - Natural Language Processing
+*   Chime - Video Conferencing, Communication Services
+
+
+
+This list is very comprehensive. A senior principal architect will need a deep understanding of these services and the systems concepts behind them to design and implement robust, scalable, and secure AWS solutions.
