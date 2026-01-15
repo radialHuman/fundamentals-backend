@@ -1,0 +1,2125 @@
+## Backend Concepts - Exhaustive List
+
+### Load Balancing & Traffic Management
+- Load Balancer
+    - Round Robin
+    - Least Connections
+    - Weighted Round Robin
+    - IP Hash
+- Consistent Hashing
+- Sticky Sessions (Session Affinity)
+- Health Checks
+- Active Health Checks
+- Passive Health Checks
+- Circuit Breaker
+- Failover
+- Auto-scaling
+- Horizontal Scaling
+- Vertical Scaling
+- Traffic Shaping
+- Rate Limiting
+- Throttling
+- Request Queuing
+- Connection Pooling
+- Keep-Alive
+
+### Proxy & Networking
+- Forward Proxy
+- Reverse Proxy
+- API Gateway
+- Service Mesh
+- Sidecar Proxy
+- Transparent Proxy
+- SSL/TLS Termination
+- SSL Offloading
+- SSL Passthrough
+- HTTP Proxy
+- SOCKS Proxy
+- TCP Proxy
+- UDP Proxy
+- Layer 4 Load Balancing
+- Layer 7 Load Balancing
+- Content-Based Routing
+- Path-Based Routing
+- Host-Based Routing
+- URL Rewriting
+- Request/Response Transformation
+
+### Caching
+- Cache
+- Cache Hit
+- Cache Miss
+- Cache Invalidation
+- Cache Eviction
+- TTL (Time To Live)
+- LRU (Least Recently Used)
+- LFU (Least Frequently Used)
+- FIFO (First In First Out)
+- Write-Through Cache
+- Write-Back Cache
+- Write-Around Cache
+- Cache Aside (Lazy Loading)
+- Read-Through Cache
+- Distributed Cache
+- In-Memory Cache
+- CDN (Content Delivery Network)
+- Edge Caching
+- Browser Caching
+- HTTP Caching
+- Cache Stampede
+- Cache Warming
+
+#### Caching Advanced
+- Cache Coherence
+- Cache Consistency Protocol
+- Distributed Cache Invalidation
+- Cache Penetration
+- Cache Avalanche
+- Cache Breakdown
+- Bloom Filter Cache
+- Negative Caching
+- Stale-While-Revalidate
+- Cache Control Headers
+- ETag
+- Last-Modified Header
+- If-None-Match
+- If-Modified-Since
+- Conditional Request
+- Cache Partition
+- Cache Shard
+- Cache Replication
+- Cache Cluster
+- Cache Node
+- Cache Slot
+- Hash Slot
+- Cache Migration
+- Cache Preloading
+- Cache Priming
+- Multi-Level Cache
+- L1 Cache
+- L2 Cache
+- Local Cache
+- Remote Cache
+- Hybrid Cache
+- Cache Mesh
+- Cache Proxy
+- Cache Gateway
+- Cache-Aside Pattern
+- Refresh-Ahead Cache
+- Cache Synchronization
+- Write-Behind Queue
+- Coalescing
+- Cache Compression
+- Cache Serialization
+- Cache Key Strategy
+- Cache Key Prefix
+- Cache Namespace
+- Cache Tag
+- Cache Group
+- Cache Dependency
+- Cache Sliding Expiration
+- Cache Absolute Expiration
+- Cache Priority
+- Cache Memory Limit
+- Cache Entry Size
+- Cache Overhead
+
+### Messaging & Queuing
+- Message Queue
+- Message Broker
+- Producer
+- Consumer
+- Publisher
+- Subscriber
+- Topic
+- Queue
+- Dead Letter Queue (DLQ)
+- Poison Message
+- Message Acknowledgment (ACK)
+- Message NACK
+- At-Most-Once Delivery
+- At-Least-Once Delivery
+- Exactly-Once Delivery
+- Message Ordering
+- Message Priority
+- Message Expiration
+- Message Persistence
+- Message Routing
+- Message Filtering
+- Message Transformation
+- Message Batching
+- Message Partitioning
+- Consumer Groups
+- Message Replay
+- Message Retention
+- Backpressure
+- Flow Control
+
+### Streaming
+- Stream Processing
+- Real-Time Processing
+- Batch Processing
+- Micro-Batching
+- Event Stream
+- Data Stream
+- Stream Partitioning
+- Stream Sharding
+- Windowing
+- Tumbling Window
+- Sliding Window
+- Session Window
+- Hopping Window
+- Watermarks
+- Late Data Handling
+- Stream Join
+- Stateful Processing
+- Stateless Processing
+- Stream Aggregation
+- Stream Filtering
+- Stream Transformation
+- Backfill
+- Replay
+- Offset
+- Checkpoint
+- Commit Log
+- Change Data Capture (CDC)
+- Log Compaction
+
+#### Advanced Messaging & Streaming
+- Kafka Streams
+- Stream Table Duality
+- Kafka Connect
+- Source Connector
+- Sink Connector
+- Message Deduplication
+- Message Compaction
+- Tombstone Record
+- Transactional Outbox Pattern
+- Inbox Pattern
+- Message Envelope
+- Message Header
+- Message Payload
+- Message Correlation ID
+- Request-Reply Pattern
+- Scatter-Gather Pattern
+- Aggregator Pattern
+- Splitter Pattern
+- Content Enricher
+- Message Bridge
+- Message Channel
+- Point-to-Point Channel
+- Publish-Subscribe Channel
+- Datatype Channel
+- Invalid Message Channel
+- Guaranteed Delivery
+- Message Dispatcher
+- Selective Consumer
+- Durable Consumer
+- Ephemeral Consumer
+- Competing Consumers
+- Message Sequence
+- Resequencer
+- Message Store
+- Claim Check Pattern
+
+### Pub/Sub
+- Publish-Subscribe Pattern
+- Event-Driven Architecture
+- Event Bus
+- Event Stream
+- Event Sourcing
+- CQRS (Command Query Responsibility Segregation)
+- Fan-Out
+- Fan-In
+- Broadcast
+- Multicast
+- Unicast
+- Topic-Based Pub/Sub
+- Content-Based Pub/Sub
+- Durable Subscriptions
+- Non-Durable Subscriptions
+- Push Model
+- Pull Model
+- Long Polling
+
+
+
+### APIs & Communication
+- REST API
+- RESTful
+- GraphQL
+- gRPC
+- SOAP
+- WebSocket
+- Server-Sent Events (SSE)
+- Long Polling
+- Short Polling
+- HTTP/1.1
+- HTTP/2
+- HTTP/3
+- QUIC
+- RPC (Remote Procedure Call)
+- JSON-RPC
+- XML-RPC
+- Thrift
+- Protocol Buffers (Protobuf)
+- MessagePack
+- Avro
+- API Versioning
+- API Rate Limiting
+- API Throttling
+- API Authentication
+- API Authorization
+- CORS (Cross-Origin Resource Sharing)
+- HATEOAS
+- Idempotency
+- Pagination
+- Cursor-Based Pagination
+- Offset-Based Pagination
+- API Composition
+- Backend for Frontend (BFF)
+
+#### API & Protocol Advanced
+- API Gateway Pattern
+- API Aggregation
+- API Orchestration
+- API Mediation
+- API Transformation
+- API Mocking
+- API Stubbing
+- API Virtualization
+- API Contract Testing
+- API Schema
+- OpenAPI Specification
+- Swagger
+- API Blueprint
+- RAML
+- AsyncAPI
+- JSON Schema
+- XML Schema (XSD)
+- GraphQL Schema
+- GraphQL Resolver
+- GraphQL DataLoader
+- GraphQL Federation
+- GraphQL Subscription
+- GraphQL Mutation
+- GraphQL Query
+- GraphQL Fragment
+- GraphQL Directive
+- GraphQL Interface
+- GraphQL Union
+- GraphQL Enum
+- GraphQL Scalar
+- N+1 Query Problem
+- Query Batching
+- Query Caching
+- Persisted Query
+- Automatic Persisted Query (APQ)
+- gRPC Streaming
+- Unary RPC
+- Server Streaming RPC
+- Client Streaming RPC
+- Bidirectional Streaming RPC
+- gRPC Interceptor
+- gRPC Metadata
+- gRPC Deadline
+- gRPC Cancellation
+- gRPC Load Balancing
+- gRPC Health Check
+- gRPC Reflection
+- HTTP Method
+- GET Request
+- POST Request
+- PUT Request
+- PATCH Request
+- DELETE Request
+- HEAD Request
+- OPTIONS Request
+- TRACE Request
+- CONNECT Request
+- HTTP Status Code
+- 1xx Informational
+- 2xx Success
+- 3xx Redirection
+- 4xx Client Error
+- 5xx Server Error
+- 200 OK
+- 201 Created
+- 204 No Content
+- 301 Moved Permanently
+- 302 Found
+- 304 Not Modified
+- 400 Bad Request
+- 401 Unauthorized
+- 403 Forbidden
+- 404 Not Found
+- 405 Method Not Allowed
+- 408 Request Timeout
+- 409 Conflict
+- 410 Gone
+- 412 Precondition Failed
+- 413 Payload Too Large
+- 414 URI Too Long
+- 415 Unsupported Media Type
+- 422 Unprocessable Entity
+- 423 Locked
+- 429 Too Many Requests
+- 500 Internal Server Error
+- 501 Not Implemented
+- 502 Bad Gateway
+- 503 Service Unavailable
+- 504 Gateway Timeout
+- 505 HTTP Version Not Supported
+- HTTP Header
+- Request Header
+- Response Header
+- Content-Type Header
+- Accept Header
+- Authorization Header
+- Content-Length Header
+- Content-Encoding Header
+- Transfer-Encoding Header
+- Accept-Encoding Header
+- User-Agent Header
+- Referer Header
+- Origin Header
+- Host Header
+- Cookie Header
+- Set-Cookie Header
+- Cache-Control Header
+- Pragma Header
+- Expires Header
+- Age Header
+- Vary Header
+- Location Header
+- Retry-After Header
+- X-Forwarded-For Header
+- X-Real-IP Header
+- X-Request-ID Header
+- X-Correlation-ID Header
+- Chunked Transfer Encoding
+- Content Negotiation
+- Media Type Negotiation
+- Language Negotiation
+- Charset Negotiation
+- Encoding Negotiation
+- HTTP Pipelining
+- HTTP Multiplexing
+- Server Push
+- Priority Frame
+- Stream Priority
+- Flow Control Window
+- ALPN (Application-Layer Protocol Negotiation)
+- HPACK Compression
+- QPACK Compression
+- 0-RTT
+- Connection Migration
+- Multipath Transport
+
+### Databases & Storage
+- SQL Database
+- NoSQL Database
+- Relational Database
+- Document Database
+- Key-Value Store
+- Column-Family Store
+- Graph Database
+- Time-Series Database
+- In-Memory Database
+- Database Sharding
+- Database Partitioning
+- Horizontal Partitioning
+- Vertical Partitioning
+- Database Replication
+- Master-Slave Replication
+- Master-Master Replication
+- Multi-Master Replication
+- Read Replica
+- Write-Ahead Log (WAL)
+- Transaction Log
+- ACID (Atomicity, Consistency, Isolation, Durability)
+- BASE (Basically Available, Soft state, Eventually consistent)
+- CAP Theorem
+- Consistency
+- Availability
+- Partition Tolerance
+- Strong Consistency
+- Eventual Consistency
+- Weak Consistency
+- Causal Consistency
+- Read-After-Write Consistency
+- Monotonic Reads
+- Monotonic Writes
+- Two-Phase Commit (2PC)
+- Three-Phase Commit (3PC)
+- Distributed Transaction
+- Saga Pattern
+- Compensating Transaction
+- Optimistic Locking
+- Pessimistic Locking
+- MVCC (Multi-Version Concurrency Control)
+- Snapshot Isolation
+- Serializable Isolation
+- Read Committed
+- Read Uncommitted
+- Repeatable Read
+- Deadlock
+- Race Condition
+- Connection Pool
+- Database Index
+- B-Tree Index
+- Hash Index
+- Full-Text Index
+- Geospatial Index
+- Query Optimization
+- Query Plan
+- Database Migration
+- Schema Migration
+- Data Migration
+- Normalization
+- Denormalization
+- Object-Relational Mapping (ORM)
+- Data Warehouse
+- Data Lake
+- OLTP (Online Transaction Processing)
+- OLAP (Online Analytical Processing)
+- ETL (Extract, Transform, Load)
+- ELT (Extract, Load, Transform)
+
+#### Database Advanced Topics
+- Database Vacuum
+- Database Analyze
+- Query Planner
+- Cost-Based Optimizer
+- Rule-Based Optimizer
+- Execution Plan
+- Index Scan
+- Sequential Scan
+- Bitmap Index Scan
+- Index-Only Scan
+- Covering Index
+- Composite Index
+- Partial Index
+- Unique Index
+- Clustered Index
+- Non-Clustered Index
+- Inverted Index
+- Spatial Index
+- R-Tree
+- GiST Index
+- GIN Index
+- BRIN Index
+- Materialized View
+- View
+- Stored Procedure
+- Trigger
+- User-Defined Function (UDF)
+- Database Cursor
+- Prepared Statement
+- Bind Variable
+- Statement Caching
+- Result Set
+- Cursor Pagination
+- Keyset Pagination
+- Database Sequence
+- Auto-Increment
+- UUID Generation
+- ULID
+- Snowflake ID
+- Database Constraint
+- Foreign Key Constraint
+- Check Constraint
+- Unique Constraint
+- Not Null Constraint
+- Default Value
+- Cascade Delete
+- Cascade Update
+- Soft Delete
+- Hard Delete
+- Logical Delete
+- Audit Trail
+- Change Tracking
+- Temporal Table
+- System-Versioned Table
+- Bi-Temporal Table
+- Valid Time
+- Transaction Time
+- Database Collation
+- Character Set
+- Encoding
+- UTF-8
+- Database Pool Size
+- Connection Timeout
+- Query Timeout
+- Statement Timeout
+- Idle Timeout
+- Max Connections
+- Database Backup
+- Hot Backup
+- Cold Backup
+- Incremental Backup
+- Differential Backup
+- Full Backup
+- Point-in-Time Recovery (PITR)
+- Snapshot
+- Database Restore
+- Database Failover
+- Automatic Failover
+- Manual Failover
+- Database Promotion
+- Read-Write Split
+- Write Concern
+- Read Concern
+- Read Preference
+- Write Preference
+- Majority Write
+- Acknowledged Write
+- Unacknowledged Write
+- Journaling
+- Fsync
+- Database Tuning
+- Vacuum Strategy
+- Autovacuum
+- Table Bloat
+- Index Bloat
+- Database Statistics
+- Cardinality
+- Selectivity
+- Database Hints
+- Query Hint
+- Join Hint
+- Nested Loop Join
+- Hash Join
+- Merge Join
+- Cross Join
+- Self Join
+- Lateral Join
+- Common Table Expression (CTE)
+- Recursive CTE
+- Window Function
+- Aggregate Function
+- Scalar Function
+- Table Function
+- Subquery
+- Correlated Subquery
+- Derived Table
+- Inline View
+- Database Link
+- Federated Query
+- Polyglot Persistence
+- Multi-Model Database
+- Embedded Database
+- Mobile Database
+- Spatial Database
+- Vector Database
+- Embedding
+- Similarity Search
+- Nearest Neighbor Search
+- Approximate Nearest Neighbor (ANN)
+- HNSW Index
+- LSH (Locality-Sensitive Hashing)
+
+### Microservices & Architecture
+- Microservices
+- Monolith
+- Service-Oriented Architecture (SOA)
+- Domain-Driven Design (DDD)
+- Bounded Context
+- Aggregate
+- Entity
+- Value Object
+- Repository Pattern
+- Service Discovery
+- Service Registry
+- Client-Side Discovery
+- Server-Side Discovery
+- Service Orchestration
+- Service Choreography
+- Distributed Monolith
+- Strangler Fig Pattern
+- Sidecar Pattern
+- Ambassador Pattern
+- Anti-Corruption Layer
+- API Composition Pattern
+- Database per Service
+- Shared Database
+- Saga Pattern
+- Event Sourcing
+- CQRS
+- Bulkhead Pattern
+- Retry Pattern
+- Timeout
+- Exponential Backoff
+- Jitter
+- Graceful Degradation
+- Fault Tolerance
+- Resilience
+- Self-Healing
+
+### Security
+- Authentication
+- Authorization
+- OAuth 2.0
+- OpenID Connect
+- JWT (JSON Web Token)
+- Session Management
+- Cookie-Based Authentication
+- Token-Based Authentication
+- API Key
+- Basic Authentication
+- Digest Authentication
+- SAML
+- SSO (Single Sign-On)
+- Multi-Factor Authentication (MFA)
+- Two-Factor Authentication (2FA)
+- RBAC (Role-Based Access Control)
+- ABAC (Attribute-Based Access Control)
+- ACL (Access Control List)
+- Encryption
+- Hashing
+- Salting
+- TLS/SSL
+- Certificate
+- Public Key Infrastructure (PKI)
+- HTTPS
+- CSRF (Cross-Site Request Forgery)
+- XSS (Cross-Site Scripting)
+- SQL Injection
+- Input Validation
+- Output Encoding
+- Sanitization
+- Security Headers
+- CORS
+- Content Security Policy (CSP)
+- OWASP Top 10
+- Penetration Testing
+- Vulnerability Scanning
+- DDoS Protection
+- WAF (Web Application Firewall)
+- Secrets Management
+- Key Management
+- Zero Trust Architecture
+
+#### Security Advanced
+- Penetration Testing
+- Red Team
+- Blue Team
+- Purple Team
+- Threat Modeling
+- Attack Surface
+- Security Audit
+- Compliance
+- GDPR
+- HIPAA
+- PCI DSS
+- SOC 2
+- ISO 27001
+- Security Hardening
+- Principle of Least Privilege
+- Defense in Depth
+- Security by Obscurity
+- Security Through Transparency
+- Zero-Day Vulnerability
+- CVE (Common Vulnerabilities and Exposures)
+- Security Patch
+- Hotfix
+- Security Advisory
+- Threat Intelligence
+- Intrusion Detection System (IDS)
+- Intrusion Prevention System (IPS)
+- SIEM (Security Information and Event Management)
+- Security Orchestration
+- SOAR (Security Orchestration, Automation and Response)
+- Honeypot
+- Honeytokens
+- Canary Tokens
+- Security Token
+- Refresh Token
+- Access Token
+- ID Token
+- Bearer Token
+- MAC Token
+- Token Rotation
+- Token Revocation
+- Token Introspection
+- Token Exchange
+- Token Binding
+- Proof of Possession
+- PKCE (Proof Key for Code Exchange)
+- Authorization Code Flow
+- Implicit Flow
+- Client Credentials Flow
+- Resource Owner Password Flow
+- Device Authorization Flow
+- Assertion Framework
+- JWT Claims
+- JWT Header
+- JWT Signature
+- JWS (JSON Web Signature)
+- JWE (JSON Web Encryption)
+- JWK (JSON Web Key)
+- JWKS (JSON Web Key Set)
+- Symmetric Encryption
+- Asymmetric Encryption
+- Public Key Cryptography
+- Private Key
+- Key Pair
+- Key Exchange
+- Diffie-Hellman
+- RSA
+- ECC (Elliptic Curve Cryptography)
+- AES
+- ChaCha20
+- Poly1305
+- SHA-256
+- SHA-512
+- bcrypt
+- scrypt
+- Argon2
+- PBKDF2
+- HMAC
+- Digital Signature
+- Certificate Authority (CA)
+- Root Certificate
+- Intermediate Certificate
+- Certificate Chain
+- Certificate Pinning
+- OCSP (Online Certificate Status Protocol)
+- CRL (Certificate Revocation List)
+- mTLS (Mutual TLS)
+- Certificate Transparency
+- Perfect Forward Secrecy
+- TLS 1.2
+- TLS 1.3
+- SNI (Server Name Indication)
+- HSTS (HTTP Strict Transport Security)
+- Certificate Subject Alternative Name (SAN)
+- Wildcard Certificate
+- Self-Signed Certificate
+- Let's Encrypt
+- ACME Protocol
+- Security Context
+- Security Principal
+- Claims-Based Identity
+- Identity Provider (IdP)
+- Service Provider (SP)
+- Federation
+- Trust Relationship
+- Assertion
+- Security Assertion Markup Language (SAML)
+- SAML Request
+- SAML Response
+- SAML Assertion
+- Identity Federation
+- Cross-Domain Authentication
+- Kerberos
+- LDAP
+- Active Directory
+- Directory Service
+- User Directory
+- Group Membership
+- Permission
+- Privilege
+- Entitlement
+- Access Policy
+- Security Policy
+- Password Policy
+- Password Hashing
+- Password Salt
+- Password Pepper
+- Rainbow Table
+- Brute Force Attack
+- Dictionary Attack
+- Credential Stuffing
+- Password Spraying
+- Session Hijacking
+- Session Fixation
+- Clickjacking
+- Frame Busting
+- X-Frame-Options
+- Tabnabbing
+- Open Redirect
+- LDAP Injection
+- XML Injection
+- XXE (XML External Entity)
+- Command Injection
+- Code Injection
+- Template Injection
+- SSTI (Server-Side Template Injection)
+- Path Traversal
+- Directory Traversal
+- Local File Inclusion (LFI)
+- Remote File Inclusion (RFI)
+- Insecure Deserialization
+- Mass Assignment
+- Parameter Tampering
+- HTTP Parameter Pollution
+- Request Smuggling
+- Response Splitting
+- Host Header Injection
+- SSRF (Server-Side Request Forgery)
+- CSRF Token
+- SameSite Cookie
+- Secure Cookie
+- HttpOnly Cookie
+- Cookie Domain
+- Cookie Path
+- Cookie Scope
+- Third-Party Cookie
+- First-Party Cookie
+- Subdomain Cookie
+- Supercookie
+- Zombie Cookie
+- Flash Cookie
+- Web Storage
+- LocalStorage
+- SessionStorage
+- IndexedDB
+- Web SQL
+- Cookie Consent
+- Privacy Policy
+- Data Protection
+- Data Minimization
+- Purpose Limitation
+- Data Retention
+- Right to Erasure
+- Right to Access
+- Data Portability
+- Privacy by Design
+- Privacy by Default
+- Pseudonymization
+- Anonymization
+- Data Masking
+- Data Obfuscation
+- Tokenization
+- Format-Preserving Encryption
+- Homomorphic Encryption
+- Secure Enclave
+- Hardware Security Module (HSM)
+- Trusted Platform Module (TPM)
+- Secure Boot
+- Attestation
+- Key Management Service (KMS)
+- Secrets Vault
+- Secret Rotation
+- Secret Versioning
+- Secret Leakage
+- Credential Scanning
+- Static Application Security Testing (SAST)
+- Dynamic Application Security Testing (DAST)
+- Interactive Application Security Testing (IAST)
+- Runtime Application Self-Protection (RASP)
+- Software Composition Analysis (SCA)
+- Dependency Scanning
+- Vulnerability Management
+- Patch Management
+- Security Baseline
+- Security Posture
+- Risk Assessment
+- Risk Mitigation
+- Incident Response
+- Incident Management
+- Security Incident
+- Data Breach
+- Breach Notification
+- Forensics
+- Digital Forensics
+- Log Retention
+- Audit Log
+- Access Log
+- Security Log
+- Tamper-Evident Log
+- Immutable Log
+- Log Integrity
+- Log Forwarding
+- Log Shipping
+- Syslog
+- Security Monitoring
+- Anomaly Detection
+- Behavioral Analysis
+- User Behavior Analytics (UBA)
+- Entity Behavior Analytics
+- Threat Detection
+- Threat Hunting
+- Security Analytics
+- Security Dashboard
+- Security Metrics
+- Security KPI
+
+### Observability & Monitoring
+- Logging
+- Monitoring
+- Metrics
+- Tracing
+- Distributed Tracing
+- Span
+- Trace Context
+- APM (Application Performance Monitoring)
+- Instrumentation
+- Telemetry
+- Observability
+- Log Aggregation
+- Centralized Logging
+- Structured Logging
+- Log Levels
+- Error Tracking
+- Exception Handling
+- Alerting
+- SLA (Service Level Agreement)
+- SLO (Service Level Objective)
+- SLI (Service Level Indicator)
+- Uptime
+- Downtime
+- MTBF (Mean Time Between Failures)
+- MTTR (Mean Time To Recovery)
+- RTO (Recovery Time Objective)
+- RPO (Recovery Point Objective)
+- Health Check Endpoint
+- Readiness Probe
+- Liveness Probe
+- Startup Probe
+- Metrics Aggregation
+- Time-Series Metrics
+- Counter
+- Gauge
+- Histogram
+- Summary
+- Percentile
+- Latency
+- Throughput
+- Error Rate
+- Request Rate
+- Response Time
+- P50, P95, P99 (Percentiles)
+
+#### Observability Advanced
+- Observability Pipeline
+- Telemetry Data
+- Metric Cardinality
+- High Cardinality
+- Low Cardinality
+- Metric Explosion
+- Label
+- Tag
+- Dimension
+- Attribute
+- Resource Attribute
+- Instrumentation Library
+- Auto-Instrumentation
+- Manual Instrumentation
+- OpenTelemetry
+- OpenTracing
+- OpenCensus
+- Jaeger
+- Zipkin
+- Trace ID
+- Span ID
+- Parent Span
+- Child Span
+- Span Attribute
+- Span Event
+- Span Link
+- Trace Sampling
+- Head-Based Sampling
+- Tail-Based Sampling
+- Probabilistic Sampling
+- Adaptive Sampling
+- Rate Limiting Sampler
+- Sampling Rate
+- Trace Context Propagation
+- W3C Trace Context
+- Baggage
+- Correlation Context
+- Exemplar
+- Service Map
+- Dependency Map
+- Call Graph
+- Flame Graph
+- Icicle Graph
+- Sunburst Chart
+- Heatmap
+- Time Series
+- Time Series Database (TSDB)
+- Metric Aggregation
+- Downsampling
+- Rollup
+- Pre-Aggregation
+- Cardinality Limiting
+- Metric Relabeling
+- Recording Rule
+- Alerting Rule
+- Alert Manager
+- Alert Routing
+- Alert Grouping
+- Alert Inhibition
+- Alert Silencing
+- Alert Deduplication
+- Alert Escalation
+- On-Call Rotation
+- Incident Management
+- Incident Commander
+- Runbook
+- Playbook
+- Post-Mortem
+- Blameless Post-Mortem
+- Root Cause Analysis (RCA)
+- Five Whys
+- Fishbone Diagram
+- Incident Timeline
+
+### Concurrency & Performance
+- Concurrency
+- Parallelism
+- Thread
+- Process
+- Coroutine
+- Green Thread
+- Async/Await
+- Non-Blocking I/O
+- Blocking I/O
+- Event Loop
+- Callback
+- Promise
+- Future
+- Thread Pool
+- Worker Pool
+- Mutex
+- Semaphore
+- Lock
+- Read-Write Lock
+- Atomic Operations
+- Memory Barrier
+- Volatile
+- Thread-Safe
+- Race Condition
+- Deadlock
+- Livelock
+- Starvation
+- Context Switching
+- CPU-Bound
+- I/O-Bound
+- Asynchronous Processing
+- Synchronous Processing
+- Reactive Programming
+- Backpressure
+- Buffering
+- Debouncing
+- Throttling
+- Lazy Loading
+- Eager Loading
+- Prefetching
+- Memoization
+- Profiling
+- Benchmarking
+- Performance Testing
+- Load Testing
+- Stress Testing
+- Spike Testing
+- Soak Testing
+- Capacity Planning
+
+### Deployment & Infrastructure
+- Containerization
+- Docker
+- Container Orchestration
+- Kubernetes
+- Pod
+- Deployment
+- StatefulSet
+- DaemonSet
+- Service (K8s)
+- Ingress
+- ConfigMap
+- Secret (K8s)
+- Namespace
+- Helm
+- CI/CD (Continuous Integration/Continuous Deployment)
+- Blue-Green Deployment
+- Canary Deployment
+- Rolling Deployment
+- A/B Testing
+- Feature Flags
+- Feature Toggles
+- Infrastructure as Code (IaC)
+- Terraform
+- Ansible
+- Configuration Management
+- Immutable Infrastructure
+- Serverless
+- Function as a Service (FaaS)
+- Lambda Function
+- Cold Start
+- Warm Start
+- Virtual Machine
+- Bare Metal
+- Cloud Computing
+- Multi-Cloud
+- Hybrid Cloud
+- On-Premise
+- Edge Computing
+- Fog Computing
+- Container Registry
+- Image Registry
+- Artifact Repository
+- Version Control
+- Git Flow
+- Trunk-Based Development
+
+### Data Serialization & Formats
+- JSON
+- XML
+- YAML
+- TOML
+- CSV
+- Protocol Buffers
+- Avro
+- Thrift
+- MessagePack
+- BSON
+- Parquet
+- ORC
+- Arrow
+- Base64 Encoding
+- URL Encoding
+- Compression
+- Gzip
+- Brotli
+- Snappy
+- LZ4
+- Zstandard
+
+### Networking Concepts
+- TCP
+- UDP
+- IP Address
+- IPv4
+- IPv6
+- Port
+- Socket
+- DNS
+- DNS Resolution
+- DNS Caching
+- Load Balancer DNS
+- Anycast
+- Multicast
+- Broadcast
+- Subnet
+- CIDR
+- NAT (Network Address Translation)
+- VPN
+- VPC (Virtual Private Cloud)
+- Firewall
+- Network Segmentation
+- OSI Model
+- TCP/IP Model
+- Handshake
+- Three-Way Handshake
+- Keep-Alive
+- Timeout
+- Latency
+- Bandwidth
+- Throughput
+- Packet Loss
+- Network Partition
+- Split Brain
+- Quorum
+- Gossip Protocol
+- Heartbeat
+- Ping
+- Traceroute
+- MTU (Maximum Transmission Unit)
+- Fragmentation
+- Congestion Control
+- Flow Control
+- Sliding Window
+- ACK/NACK
+
+### Distributed Systems
+- Distributed System
+- Consensus
+- Paxos
+- Raft
+- Byzantine Fault Tolerance
+- Leader Election
+- Distributed Lock
+- Distributed Consensus
+- Vector Clock
+- Lamport Timestamp
+- Logical Clock
+- Causal Ordering
+- Total Ordering
+- Partial Ordering
+- Distributed Hash Table (DHT)
+- Merkle Tree
+- Bloom Filter
+- HyperLogLog
+- Count-Min Sketch
+- Consistent Hashing Ring
+- Rendezvous Hashing
+- Gossip Protocol
+- Epidemic Protocol
+- Anti-Entropy
+- Conflict Resolution
+- Last Write Wins (LWW)
+- Multi-Version
+- CRDT (Conflict-Free Replicated Data Type)
+- Operational Transformation
+- Quorum Read
+- Quorum Write
+- Hinted Handoff
+- Read Repair
+- Sloppy Quorum
+- Merkle Tree Sync
+
+### Patterns & Best Practices
+- Design Patterns
+- Singleton Pattern
+- Factory Pattern
+- Builder Pattern
+- Observer Pattern
+- Strategy Pattern
+- Adapter Pattern
+- Decorator Pattern
+- Proxy Pattern
+- Chain of Responsibility
+- Command Pattern
+- Repository Pattern
+- Unit of Work
+- Dependency Injection
+- Inversion of Control (IoC)
+- Separation of Concerns
+- Single Responsibility Principle
+- Open/Closed Principle
+- Liskov Substitution Principle
+- Interface Segregation Principle
+- Dependency Inversion Principle
+- SOLID Principles
+- DRY (Don't Repeat Yourself)
+- KISS (Keep It Simple, Stupid)
+- YAGNI (You Aren't Gonna Need It)
+- Twelve-Factor App
+- Clean Architecture
+- Hexagonal Architecture
+- Onion Architecture
+- Layered Architecture
+- Event-Driven Architecture
+- Data-Driven Architecture
+
+### Additional Backend Concepts
+- Middleware
+- Request Pipeline
+- Response Pipeline
+- Request Context
+- Dependency Graph
+- Service Dependency
+- Backward Compatibility
+- Forward Compatibility
+- API Contract
+- Schema Validation
+- Data Validation
+- Business Logic
+- Application Logic
+- Domain Logic
+- Data Access Layer
+- Presentation Layer
+- Business Layer
+- Persistence Layer
+- DTO (Data Transfer Object)
+- VO (Value Object)
+- DAO (Data Access Object)
+- Model
+- View
+- Controller
+- MVC Pattern
+- MVVM Pattern
+- Webhook
+- Callback URL
+- Polling
+- Push Notification
+- Email Queue
+- Background Job
+- Scheduled Job
+- Cron Job
+- Job Queue
+- Task Queue
+- Worker
+- Job Scheduler
+- Batch Job
+- Async Task
+- Deferred Execution
+- Transaction
+- Unit of Work
+- Idempotent Operation
+- Stateful Service
+- Stateless Service
+- Session State
+- Application State
+- Shared State
+- Distributed State
+- State Machine
+- Finite State Machine
+- Workflow Engine
+- Business Process Management (BPM)
+- Rule Engine
+- Template Engine
+- Rendering
+- Server-Side Rendering (SSR)
+- Client-Side Rendering (CSR)
+- Static Site Generation (SSG)
+- Incremental Static Regeneration (ISR)
+
+
+## Interview Concepts - Exhaustive List
+
+### System Design Fundamentals
+- Functional Requirements
+- Non-Functional Requirements
+- System Constraints
+- Traffic Estimation
+- Storage Estimation
+- Bandwidth Estimation
+- Memory Estimation
+- QPS (Queries Per Second)
+- TPS (Transactions Per Second)
+- RPS (Requests Per Second)
+- Peak Load
+- Average Load
+- Daily Active Users (DAU)
+- Monthly Active Users (MAU)
+- Concurrent Users
+- Read-Heavy System
+- Write-Heavy System
+- Read-Write Ratio
+- Data Volume
+- Growth Rate
+- Capacity Planning
+- Resource Allocation
+- System Boundaries
+- System Interface
+- API Design
+- Data Model Design
+- Schema Design
+- Component Design
+- High-Level Design (HLD)
+- Low-Level Design (LLD)
+- Architecture Diagram
+- Sequence Diagram
+- Component Diagram
+- Data Flow Diagram
+- System Flow
+- Request Flow
+- Data Pipeline
+- Processing Pipeline
+- Bottleneck Analysis
+- Single Point of Failure (SPOF)
+- Fault Tolerance Design
+- Disaster Recovery
+- Business Continuity
+- Geographic Distribution
+- Multi-Region Deployment
+- Cross-Region Replication
+- Active-Active Configuration
+- Active-Passive Configuration
+- Hot Standby
+- Warm Standby
+- Cold Standby
+- Backup Strategy
+- Recovery Strategy
+- Data Redundancy
+- System Redundancy
+- Network Redundancy
+- Power Redundancy
+
+### Scalability Patterns
+- Scalability
+- Elasticity
+- Horizontal Scaling Pattern
+- Vertical Scaling Pattern
+- Diagonal Scaling
+- Scale-Out
+- Scale-Up
+- Scale-Down
+- Scale-In
+- Auto-Scaling Policy
+- Predictive Scaling
+- Reactive Scaling
+- Scheduled Scaling
+- Target Tracking Scaling
+- Step Scaling
+- Simple Scaling
+- Scaling Threshold
+- Scaling Metric
+- Scaling Cooldown
+- Warm-Up Period
+- Stateless Scaling
+- Stateful Scaling
+- Database Scaling
+- Cache Scaling
+- Storage Scaling
+- Compute Scaling
+- Network Scaling
+- Sharding Strategy
+- Shard Key Selection
+- Hash-Based Sharding
+- Range-Based Sharding
+- Geographic Sharding
+- Directory-Based Sharding
+- Entity-Based Sharding
+- Lookup-Based Sharding
+- Consistent Hash Ring
+- Virtual Nodes
+- Rebalancing
+- Shard Migration
+- Shard Splitting
+- Shard Merging
+- Hot Shard
+- Cold Shard
+- Shard Isolation
+- Cross-Shard Query
+- Cross-Shard Transaction
+- Scatter-Gather Query
+- Partition Key
+- Composite Key
+- Surrogate Key
+- Natural Key
+- Partition Pruning
+- Partition-Wise Join
+
+### Availability & Reliability
+- High Availability (HA)
+- Availability Zone
+- Region
+- Multi-AZ Deployment
+- Availability Percentage
+- Five Nines (99.999%)
+- Four Nines (99.99%)
+- Three Nines (99.9%)
+- Uptime Guarantee
+- Planned Downtime
+- Unplanned Downtime
+- Maintenance Window
+- Rolling Maintenance
+- Zero-Downtime Deployment
+- Reliability Engineering
+- Site Reliability Engineering (SRE)
+- Error Budget
+- Toil
+- Toil Reduction
+- Operational Load
+- On-Call Duty
+- Incident Severity
+- P0 Incident
+- P1 Incident
+- P2 Incident
+- Service Degradation
+- Partial Outage
+- Full Outage
+- Cascading Failure
+- Failure Domain
+- Blast Radius
+- Failure Isolation
+- Bulkhead Isolation
+- Chaos Engineering
+- Chaos Monkey
+- Fault Injection
+- Failure Testing
+- Resilience Testing
+- Game Day
+- Disaster Recovery Drill
+- Backup Testing
+- Restore Testing
+- Failback
+- Switchover
+- Cutover
+- Rollback Strategy
+- Forward Fix
+- Hotfix Deployment
+
+### Performance & Optimization
+- Performance Optimization
+- Query Optimization
+- Database Optimization
+- Network Optimization
+- Code Optimization
+- Algorithm Optimization
+- Data Structure Selection
+- Time Complexity
+- Space Complexity
+- Big O Notation
+- Amortized Analysis
+- Performance Bottleneck
+- CPU Bottleneck
+- Memory Bottleneck
+- Disk I/O Bottleneck
+- Network Bottleneck
+- Database Bottleneck
+- Application Bottleneck
+- Performance Profiling
+- CPU Profiling
+- Memory Profiling
+- I/O Profiling
+- Network Profiling
+- Hot Path
+- Cold Path
+- Critical Path
+- Performance Budget
+- Performance Baseline
+- Performance Regression
+- Performance Tuning
+- JVM Tuning
+- Garbage Collection Tuning
+- GC Pause
+- Stop-The-World GC
+- Concurrent GC
+- Incremental GC
+- Generational GC
+- Young Generation
+- Old Generation
+- Survivor Space
+- Eden Space
+- Heap Size
+- Stack Size
+- Memory Leak
+- Memory Pressure
+- Memory Fragmentation
+- Memory Pool
+- Off-Heap Memory
+- Direct Memory
+- Memory Mapped File
+- Zero-Copy
+- Sendfile
+- Splice
+- DMA (Direct Memory Access)
+- Kernel Bypass
+- User Space
+- Kernel Space
+- System Call
+- Context Switch Overhead
+- CPU Affinity
+- NUMA (Non-Uniform Memory Access)
+- Cache Line
+- False Sharing
+- Cache Locality
+- Spatial Locality
+- Temporal Locality
+- Prefetching Strategy
+- Branch Prediction
+- Pipeline Stall
+- Instruction-Level Parallelism
+- SIMD (Single Instruction Multiple Data)
+- Vectorization
+- Loop Unrolling
+- Tail Call Optimization
+- Inlining
+- Dead Code Elimination
+- Constant Folding
+- Lazy Evaluation
+- Short-Circuit Evaluation
+- Batch Processing Optimization
+- Micro-Optimization
+- Premature Optimization
+
+### Data Management
+- Data Lifecycle
+- Data Ingestion
+- Data Collection
+- Data Processing
+- Data Storage
+- Data Retrieval
+- Data Archival
+- Data Deletion
+- Data Purging
+- Data Expiration
+- Hot Data
+- Warm Data
+- Cold Data
+- Frozen Data
+- Data Tiering
+- Storage Tiering
+- Data Compression Strategy
+- Data Deduplication
+- Data Aggregation
+- Data Summarization
+- Data Sampling
+- Data Filtering
+- Data Transformation Pipeline
+- Data Enrichment
+- Data Cleansing
+- Data Quality
+- Data Validation Pipeline
+- Data Consistency Check
+- Data Integrity Check
+- Data Reconciliation
+- Data Synchronization
+- Data Replication Strategy
+- Asynchronous Replication
+- Synchronous Replication
+- Semi-Synchronous Replication
+- Replication Lag
+- Replication Delay
+- Replication Conflict
+- Conflict Resolution Strategy
+- Multi-Master Conflict
+- Write Conflict
+- Version Vector
+- Dotted Version Vector
+- Sibling Values
+- Data Versioning
+- Schema Evolution
+- Schema Registry
+- Schema Compatibility
+- Backward Compatibility
+- Forward Compatibility
+- Full Compatibility
+- Schema Validation
+- Data Contract
+- Data Lineage
+- Data Provenance
+- Data Catalog
+- Metadata Management
+- Metadata Store
+- Data Dictionary
+- Data Governance
+- Data Stewardship
+- Master Data Management (MDM)
+- Reference Data
+- Transactional Data
+- Analytical Data
+- Operational Data Store (ODS)
+- Data Mart
+- Star Schema
+- Snowflake Schema
+- Fact Table
+- Dimension Table
+- Slowly Changing Dimension (SCD)
+- Type 1 SCD
+- Type 2 SCD
+- Type 3 SCD
+- Surrogate Key Generation
+- Data Partitioning Strategy
+- Time-Based Partitioning
+- List Partitioning
+- Hash Partitioning
+- Range Partitioning
+- Composite Partitioning
+- Sub-Partitioning
+- Partition Key Design
+- Data Distribution
+- Data Skew
+- Skewed Data Handling
+- Data Locality Optimization
+- Colocation
+- Data Affinity
+
+### Specific System Designs
+- URL Shortener Design
+- Pastebin Design
+- Instagram Design
+- Twitter Design
+- Facebook Newsfeed Design
+- YouTube Design
+- Netflix Design
+- Uber Design
+- Lyft Design
+- Google Maps Design
+- Yelp Design
+- Nearby Friends Design
+- Typeahead Suggestion
+- Autocomplete System
+- Search Autocomplete
+- Trending Topics
+- Top K Problem
+- Heavy Hitters
+- Rate Limiter Design
+- Distributed Rate Limiter
+- API Rate Limiter
+- Token Bucket Algorithm
+- Leaky Bucket Algorithm
+- Fixed Window Counter
+- Sliding Window Log
+- Sliding Window Counter
+- Notification System Design
+- Push Notification System
+- Email System Design
+- SMS Gateway
+- Webhook System
+- Chat System Design
+- Messaging App Design
+- WhatsApp Design
+- Slack Design
+- Discord Design
+- Real-Time Chat
+- Group Chat
+- One-on-One Chat
+- Message Delivery
+- Message Read Receipt
+- Online Presence
+- User Status
+- Last Seen
+- Typing Indicator
+- File Sharing System
+- Dropbox Design
+- Google Drive Design
+- Cloud Storage Design
+- Distributed File System
+- Object Storage
+- Block Storage
+- File Metadata
+- Chunking Strategy
+- Delta Sync
+- Conflict Resolution in Sync
+- Version Control System
+- Git Internals
+- Collaborative Editing
+- Operational Transformation (OT)
+- Web Crawler Design
+- Search Engine Design
+- Inverted Index
+- Document Indexing
+- Ranking Algorithm
+- PageRank
+- TF-IDF
+- BM25
+- Recommendation System
+- Collaborative Filtering
+- Content-Based Filtering
+- Hybrid Recommendation
+- Matrix Factorization
+- Embedding-Based Recommendation
+- Real-Time Recommendation
+- Personalization
+- User Profile
+- User Segmentation
+- A/B Testing Framework
+- Feature Flag System
+- Experimentation Platform
+- Metrics Collection
+- Analytics Pipeline
+- Event Tracking
+- Clickstream Data
+- User Behavior Tracking
+- Session Tracking
+- Funnel Analysis
+- Cohort Analysis
+- Retention Analysis
+- Churn Prediction
+- Ad System Design
+- Ad Server
+- Ad Targeting
+- Ad Auction
+- Real-Time Bidding (RTB)
+- Ad Impression
+- Ad Click
+- Click-Through Rate (CTR)
+- Conversion Tracking
+- Attribution Model
+- Payment System Design
+- Payment Gateway
+- Payment Processing
+- Transaction Processing
+- Payment Reconciliation
+- Idempotency in Payments
+- Double-Spend Prevention
+- Payment Retry Logic
+- Refund Processing
+- Chargeback Handling
+- Fraud Detection
+- Risk Scoring
+- Anomaly Detection System
+- Booking System Design
+- Reservation System
+- Inventory Management
+- Seat Selection
+- Double Booking Prevention
+- Overbooking Strategy
+- Ticket Generation
+- QR Code Generation
+- Barcode System
+- Ticketing System
+- E-commerce Platform Design
+- Shopping Cart
+- Product Catalog
+- Inventory System
+- Order Management System (OMS)
+- Warehouse Management System (WMS)
+- Fulfillment System
+- Shipping Integration
+- Tax Calculation
+- Pricing Engine
+- Discount Engine
+- Coupon System
+- Loyalty Program
+- Leaderboard Design
+- Gaming Backend
+- Matchmaking System
+- Game State Management
+- Real-Time Multiplayer
+- Turn-Based System
+- Live Streaming System
+- Video Streaming
+- Adaptive Bitrate Streaming
+- HLS (HTTP Live Streaming)
+- DASH (Dynamic Adaptive Streaming over HTTP)
+- Video Transcoding
+- Video Encoding
+- Video CDN
+- Live Video Processing
+- Video-on-Demand (VOD)
+- Content Moderation System
+- Image Processing Pipeline
+- Image Resizing
+- Image Optimization
+- Thumbnail Generation
+- Image CDN
+- News Feed Ranking
+- Timeline Generation
+- Activity Stream
+- Social Graph
+- Friend Recommendation
+- Connection Suggestion
+- Mutual Friends
+- Degrees of Separation
+- Graph Traversal
+- Breadth-First Search (BFS)
+- Depth-First Search (DFS)
+- Shortest Path Algorithm
+- Dijkstra's Algorithm
+- A* Algorithm
+- Graph Database Design
+- Property Graph
+- RDF (Resource Description Framework)
+- Triple Store
+- SPARQL
+- Cypher Query Language
+- Gremlin
+- Graph Partitioning
+- Graph Sharding
+- Geospatial System
+- Location-Based Service (LBS)
+- Geohashing
+- Quadtree
+- Geofencing
+- Proximity Search
+- Distance Calculation
+- Haversine Formula
+- Geocoding
+- Reverse Geocoding
+- Map Tile System
+- Tile Server
+- Vector Tiles
+- Raster Tiles
+- Route Planning
+- Route Optimization
+- ETA Calculation
+- Traffic Data Processing
+- IoT Platform Design
+- Device Management
+- Device Registry
+- Device Shadow
+- Telemetry Data
+- Time-Series Data Ingestion
+- MQTT Protocol
+- CoAP Protocol
+- Device-to-Cloud Communication
+- Cloud-to-Device Communication
+- Edge Processing
+- Edge Gateway
+- Firmware Update
+- OTA (Over-The-Air) Update
+- Device Provisioning
+- Device Authentication
+- Certificate-Based Auth
+- Blockchain System Design
+- Distributed Ledger
+- Consensus Mechanism
+- Proof of Work
+- Proof of Stake
+- Smart Contract
+- Transaction Validation
+- Block Validation
+- Chain Reorganization
+- Fork Handling
+- Cryptocurrency Wallet
+- Machine Learning System Design
+- Model Training Pipeline
+- Model Serving
+- Model Versioning
+- Model Registry
+- Feature Store
+- Feature Engineering
+- Feature Pipeline
+- Online Feature Serving
+- Offline Feature Computation
+- Model Inference
+- Batch Inference
+- Real-Time Inference
+- Model Monitoring
+- Model Drift Detection
+- Data Drift Detection
+- A/B Testing for Models
+- Shadow Mode
+- Champion-Challenger
+- Model Rollback
+- Model Retraining
+- Continuous Training
+- MLOps
+- Model Deployment
+- Model Endpoint
+- Prediction Service
+- Embedding Service
+- Vector Search Service
+
+### Infrastructure & Operations
+- Infrastructure Management
+- Resource Provisioning
+- Resource Deprovisioning
+- Resource Tagging
+- Cost Optimization
+- Cost Allocation
+- Resource Utilization
+- Capacity Management
+- Capacity Forecasting
+- Demand Forecasting
+- Traffic Forecasting
+- Growth Projection
+- Infrastructure Monitoring
+- Resource Monitoring
+- Cost Monitoring
+- Budget Alert
+- Spend Analysis
+- Reserved Instances
+- Spot Instances
+- Savings Plan
+- Right-Sizing
+- Instance Type Selection
+- Storage Class Selection
+- Network Topology
+- Network Architecture
+- Network Design
+- Subnet Design
+- VLAN
+- VPC Peering
+- Transit Gateway
+- Direct Connect
+- VPN Connection
+- Site-to-Site VPN
+- Point-to-Site VPN
+- Bastion Host
+- Jump Server
+- NAT Gateway
+- Internet Gateway
+- Egress Gateway
+- Ingress Gateway
+- Service Mesh Architecture
+- Data Plane
+- Control Plane
+- Envoy Proxy
+- Istio
+- Linkerd
+- Consul
+- Service Discovery Mechanism
+- DNS-Based Discovery
+- Client-Side Load Balancing
+- Server-Side Load Balancing
+- Global Server Load Balancing (GSLB)
+- Geographic Load Balancing
+- Latency-Based Routing
+- Geolocation Routing
+- Weighted Routing
+- Failover Routing
+- Multi-Value Answer Routing
+- Traffic Management Policy
+- Traffic Splitting
+- Traffic Mirroring
+- Dark Launch
+- Shadow Traffic
+- Synthetic Monitoring
+- Synthetic Transaction
+- Uptime Monitoring
+- Endpoint Monitoring
+- Black Box Monitoring
+- White Box Monitoring
+- Golden Signals
+- Four Golden Signals
+- RED Method (Rate, Errors, Duration)
+- USE Method (Utilization, Saturation, Errors)
+- Saturation Point
+- Queue Depth
+- Thread Pool Saturation
+- Connection Pool Saturation
+- Resource Exhaustion
+- Resource Leak
+- File Descriptor Leak
+- Socket Leak
+- Thread Leak
+- Handle Leak
+- Zombie Process
+- Orphan Process
+
+### Advanced Distributed Systems & Consistency
+- Distributed Consensus
+- Paxos
+- Raft
+- ZAB (ZooKeeper Atomic Broadcast)
+- Viewstamped Replication
+- Byzantine Fault Tolerance (BFT)
+- Practical Byzantine Fault Tolerance (PBFT)
+- Crash Fault Tolerance
+- State Machine Replication
+- Leader Election
+- Quorum Read
+- Quorum Write
+- Majority Vote
+- Two-Phase Commit (2PC)
+- Three-Phase Commit (3PC)
+- XA Protocol
+- SAGA Pattern
+- Compensating Transaction
+- Eventual Consistency
+- Strong Consistency
+- Causal Consistency
+- Session Consistency
+- Read-Your-Writes Consistency
+- Monotonic Read Consistency
+- Bounded Staleness
+- Consistency Level
+- Read Repair
+- Hinted Handoff
+- Anti-Entropy
+- Vector Clock
+- Logical Clock
+- Lamport Timestamp
+- Causal Ordering
+- Total Ordering
+- Partial Ordering
+- Conflict-Free Replicated Data Type (CRDT)
+- Last Write Wins (LWW)
+- Multi-Version Concurrency Control (MVCC)
+- Snapshot Isolation
+- Repeatable Read Isolation
+- Read Committed Isolation
+- Read Uncommitted Isolation
+- Serializable Isolation
+- Deadlock Detection
+- Deadlock Prevention
+- Deadlock Recovery
+- Livelock
+- Starvation
+- Resource Contention
+- Priority Inversion
+- Lock Contention
+- Lock Escalation
+- Lock Timeout
+- Lock Degradation
+- Lock Upgrade
+- Lock Downgrade
+- Lock Partitioning
+- Lock Coarsening
+- Lock Splitting
+- Lock Striping
+- Lock Bucketing
+- Lock Granularity
+- Fine-Grained Locking
+- Coarse-Grained Locking
+- Optimistic Concurrency Control (OCC)
+- Pessimistic Concurrency Control (PCC)
