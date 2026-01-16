@@ -1,0 +1,2 @@
+- notes : from video
+- syllabus : list findings

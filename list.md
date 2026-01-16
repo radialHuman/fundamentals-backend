@@ -1,3 +1,281 @@
+## Fundamentals
+
+
+## **Data Structures & Algorithms**
+- Trees (binary, BST, AVL, red-black)
+- Graphs (traversal, shortest path)
+- Heaps and priority queues
+- Tries and suffix trees
+- Sorting and searching algorithms
+- Dynamic programming
+- Time/space complexity analysis
+
+## **Memory Management**
+- Stack vs heap allocation
+- Memory layout and alignment
+- Pointers and references
+- Memory leaks and profiling
+- Cache locality and performance
+- Virtual memory and paging
+
+## **Concurrency & Parallelism**
+- Thread safety and synchronization primitives
+- Mutexes, semaphores, condition variables
+- Deadlock, livelock, starvation
+- Lock-free and wait-free algorithms
+- Thread pools and work queues
+- Actor model and message passing
+- Race condition detection
+
+## **Systems Programming**
+- Process management
+- Inter-process communication (IPC)
+- File systems and I/O
+- Network programming (sockets, protocols)
+- System calls and kernel interaction
+
+## **Computer Architecture**
+- CPU architecture and instruction sets
+- Memory hierarchy (L1/L2/L3 cache)
+- Pipelining and branch prediction
+- Multi-core and SIMD
+
+## **Operating Systems**
+- Scheduling algorithms
+- Context switching
+- Virtual memory management
+- File system internals
+
+## **Software Design**
+- Design patterns
+- SOLID principles
+- API design
+- Error handling strategies
+- Testing methodologies (unit, integration, e2e)
+
+## **Distributed Systems**
+- CAP theorem
+- Consensus algorithms
+- Distributed transactions
+- Load balancing and sharding
+- Fault tolerance and replication
+
+
+## **Data Structures & Algorithms**
+- Arrays, linked lists, stacks, queues, deques
+- Hash tables/maps (collision resolution, load factors)
+- Trees (binary, BST, AVL, red-black, B-trees)
+- Graphs (traversal, shortest path, topological sort)
+- Heaps and priority queues
+- Tries, suffix trees/arrays
+- Sorting algorithms (quicksort, mergesort, heapsort)
+- Searching algorithms (binary search, DFS, BFS)
+- Dynamic programming and memoization
+- Greedy algorithms
+- Backtracking
+- String algorithms (pattern matching, KMP, Rabin-Karp)
+- Time/space complexity analysis (Big O)
+
+## **Memory Management**
+- Stack vs heap allocation
+- Memory layout (text, data, BSS, heap, stack)
+- Memory alignment and padding
+- Pointers, references, and smart pointers
+- Memory leaks and debugging tools (valgrind, sanitizers)
+- Garbage collection (mark-sweep, generational, reference counting)
+- Memory pools and custom allocators
+- Cache locality and performance optimization
+- Virtual memory, paging, and TLB
+- Fragmentation (internal vs external)
+
+## **Concurrency & Parallelism**
+- Threads vs processes
+- Thread safety and critical sections
+- Synchronization primitives (mutexes, semaphores, spinlocks, RWLocks)
+- Condition variables and monitors
+- Deadlock, livelock, starvation (detection and prevention)
+- Race conditions and data races
+- Atomic operations and memory ordering
+- Lock-free and wait-free algorithms
+- Thread pools and worker queues
+- Futures, promises, async/await
+- Actor model and CSP (Communicating Sequential Processes)
+- Coroutines and green threads
+- Parallel algorithms and map-reduce
+
+## **Rate Limiting & Traffic Control**
+- **Token bucket algorithm**
+- **Leaky bucket algorithm**
+- **Fixed window counters**
+- **Sliding window log**
+- **Sliding window counters**
+- Throttling and backpressure
+- Circuit breakers
+- Bulkheads and isolation
+- Retry policies (exponential backoff, jitter)
+- Queue management (FIFO, priority queues)
+- Admission control
+
+## **Caching & Performance**
+- Cache eviction policies (LRU, LFU, FIFO, ARC)
+- Write-through vs write-back caching
+- Cache coherence protocols (MESI, MOESI)
+- CDN and edge caching
+- In-memory caches (Redis, Memcached)
+- Cache stampede prevention
+- Cache warming and preloading
+- HTTP caching (ETags, Cache-Control)
+
+## **Systems Programming**
+- Process management and lifecycle
+- Inter-process communication (pipes, shared memory, message queues, sockets)
+- Signals and signal handling
+- File descriptors and file I/O
+- Buffered vs unbuffered I/O
+- Select, poll, epoll, kqueue (event-driven I/O)
+- Memory-mapped files
+- System calls and kernel interaction
+- Daemon processes
+- Process scheduling
+
+## **Network Programming**
+- OSI and TCP/IP models
+- Sockets (TCP, UDP, Unix domain)
+- Network byte order (endianness)
+- Connection pooling
+- Keep-alive and timeouts
+- Non-blocking I/O and multiplexing
+- HTTP/1.1, HTTP/2, HTTP/3
+- WebSockets and long polling
+- Load balancing algorithms (round-robin, least connections, consistent hashing)
+- DNS resolution and caching
+- TLS/SSL handshake
+- Network protocols (TCP flow control, congestion control)
+
+## **Database & Storage**
+- ACID properties
+- Transactions and isolation levels
+- Indexing (B-tree, hash, bitmap, full-text)
+- Query optimization and execution plans
+- Normalization and denormalization
+- Sharding and partitioning
+- Replication (master-slave, multi-master)
+- Connection pooling
+- N+1 query problem
+- Database locks and deadlocks
+- Write-ahead logging (WAL)
+- MVCC (Multi-Version Concurrency Control)
+
+## **Distributed Systems**
+- CAP theorem and trade-offs
+- Consistency models (eventual, strong, causal)
+- Consensus algorithms (Paxos, Raft)
+- Distributed transactions (2PC, 3PC, Saga)
+- Vector clocks and logical timestamps
+- Gossip protocols
+- Service discovery and health checks
+- Message queues and pub/sub
+- Event sourcing and CQRS
+- Distributed tracing
+- Idempotency
+- Split-brain problems
+- Quorum-based systems
+
+## **Computer Architecture**
+- CPU architecture (RISC vs CISC)
+- Instruction sets and assembly basics
+- Registers and ALU
+- Memory hierarchy (L1/L2/L3 cache, RAM)
+- Cache lines and false sharing
+- Pipelining and hazards
+- Branch prediction
+- Out-of-order execution
+- Multi-core and NUMA
+- SIMD and vectorization
+- DMA (Direct Memory Access)
+
+## **Operating Systems**
+- Process vs thread scheduling
+- Scheduling algorithms (FCFS, SJF, Round Robin, Priority, CFS)
+- Context switching overhead
+- Virtual memory management
+- Page replacement algorithms (LRU, FIFO, Clock)
+- Thrashing
+- File system internals (inodes, journaling)
+- Disk scheduling (SCAN, C-SCAN)
+- Kernel space vs user space
+- System call overhead
+
+## **Software Design & Architecture**
+- Design patterns (Creational, Structural, Behavioral)
+- SOLID principles
+- DRY, KISS, YAGNI
+- Dependency injection
+- Layered architecture
+- Microservices vs monoliths
+- Event-driven architecture
+- API design (REST, GraphQL, gRPC)
+- Versioning strategies
+- Idempotent operations
+- Backward compatibility
+
+## **Error Handling & Reliability**
+- Exception handling vs error codes
+- Error propagation strategies
+- Panic/recovery mechanisms
+- Graceful degradation
+- Fail-fast vs fail-safe
+- Timeouts and deadlines
+- Retry logic with backoff
+- Circuit breakers
+- Health checks and readiness probes
+- Chaos engineering principles
+
+## **Testing & Debugging**
+- Unit testing, integration testing, E2E testing
+- Test doubles (mocks, stubs, fakes, spies)
+- Test coverage and mutation testing
+- Property-based testing
+- Fuzzing
+- Debugging tools (gdb, lldb, delve)
+- Profiling (CPU, memory, I/O)
+- Tracing and logging
+- Performance benchmarking
+- Load testing and stress testing
+
+## **Security Fundamentals**
+- Authentication vs authorization
+- Cryptographic hashing (SHA, bcrypt)
+- Symmetric vs asymmetric encryption
+- Salt and pepper in password storage
+- SQL injection and prevention
+- XSS and CSRF attacks
+- Input validation and sanitization
+- Secure random number generation
+- Timing attacks
+- Principle of least privilege
+
+## **Compilers & Language Implementation**
+- Lexical analysis and parsing
+- Abstract syntax trees (AST)
+- Type systems (static vs dynamic, strong vs weak)
+- Compilation vs interpretation
+- JIT compilation
+- Bytecode and virtual machines
+- Optimization techniques
+- Linking and loading
+
+## **Resource Management**
+- File handle limits
+- Connection limits
+- Thread pool sizing
+- Memory limits and OOM
+- CPU quotas and throttling
+- Disk I/O limits
+- Network bandwidth management
+- Resource cleanup (RAII, defer, finally)
+
+
 ## Backend Concepts - Exhaustive List
 
 ### Load Balancing & Traffic Management
