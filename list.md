@@ -1,5 +1,4 @@
-## Fundamentals
-
+# Fundamentals
 
 ## **Data Structures & Algorithms**
 - Trees (binary, BST, AVL, red-black)
@@ -10,6 +9,21 @@
 - Dynamic programming
 - Time/space complexity analysis
 
+## **Data Structures & Algorithms**
+- Arrays, linked lists, stacks, queues, deques
+- Hash tables/maps (collision resolution, load factors)
+- Trees (binary, BST, AVL, red-black, B-trees)
+- Graphs (traversal, shortest path, topological sort)
+- Heaps and priority queues
+- Tries, suffix trees/arrays
+- Sorting algorithms (quicksort, mergesort, heapsort)
+- Searching algorithms (binary search, DFS, BFS)
+- Dynamic programming and memoization
+- Greedy algorithms
+- Backtracking
+- String algorithms (pattern matching, KMP, Rabin-Karp)
+- Time/space complexity analysis (Big O)
+
 ## **Memory Management**
 - Stack vs heap allocation
 - Memory layout and alignment
@@ -17,6 +31,18 @@
 - Memory leaks and profiling
 - Cache locality and performance
 - Virtual memory and paging
+
+## **Memory Management**
+- Stack vs heap allocation
+- Memory layout (text, data, BSS, heap, stack)
+- Memory alignment and padding
+- Pointers, references, and smart pointers
+- Memory leaks and debugging tools (valgrind, sanitizers)
+- Garbage collection (mark-sweep, generational, reference counting)
+- Memory pools and custom allocators
+- Cache locality and performance optimization
+- Virtual memory, paging, and TLB
+- Fragmentation (internal vs external)
 
 ## **Concurrency & Parallelism**
 - Thread safety and synchronization primitives
@@ -27,12 +53,39 @@
 - Actor model and message passing
 - Race condition detection
 
+## **Concurrency & Parallelism**
+- Threads vs processes
+- Thread safety and critical sections
+- Synchronization primitives (mutexes, semaphores, spinlocks, RWLocks)
+- Condition variables and monitors
+- Deadlock, livelock, starvation (detection and prevention)
+- Race conditions and data races
+- Atomic operations and memory ordering
+- Lock-free and wait-free algorithms
+- Thread pools and worker queues
+- Futures, promises, async/await
+- Actor model and CSP (Communicating Sequential Processes)
+- Coroutines and green threads
+- Parallel algorithms and map-reduce
+
 ## **Systems Programming**
 - Process management
 - Inter-process communication (IPC)
 - File systems and I/O
 - Network programming (sockets, protocols)
 - System calls and kernel interaction
+
+## **Systems Programming**
+- Process management and lifecycle
+- Inter-process communication (pipes, shared memory, message queues, sockets)
+- Signals and signal handling
+- File descriptors and file I/O
+- Buffered vs unbuffered I/O
+- Select, poll, epoll, kqueue (event-driven I/O)
+- Memory-mapped files
+- System calls and kernel interaction
+- Daemon processes
+- Process scheduling
 
 ## **Computer Architecture**
 - CPU architecture and instruction sets
@@ -60,49 +113,6 @@
 - Load balancing and sharding
 - Fault tolerance and replication
 
-
-## **Data Structures & Algorithms**
-- Arrays, linked lists, stacks, queues, deques
-- Hash tables/maps (collision resolution, load factors)
-- Trees (binary, BST, AVL, red-black, B-trees)
-- Graphs (traversal, shortest path, topological sort)
-- Heaps and priority queues
-- Tries, suffix trees/arrays
-- Sorting algorithms (quicksort, mergesort, heapsort)
-- Searching algorithms (binary search, DFS, BFS)
-- Dynamic programming and memoization
-- Greedy algorithms
-- Backtracking
-- String algorithms (pattern matching, KMP, Rabin-Karp)
-- Time/space complexity analysis (Big O)
-
-## **Memory Management**
-- Stack vs heap allocation
-- Memory layout (text, data, BSS, heap, stack)
-- Memory alignment and padding
-- Pointers, references, and smart pointers
-- Memory leaks and debugging tools (valgrind, sanitizers)
-- Garbage collection (mark-sweep, generational, reference counting)
-- Memory pools and custom allocators
-- Cache locality and performance optimization
-- Virtual memory, paging, and TLB
-- Fragmentation (internal vs external)
-
-## **Concurrency & Parallelism**
-- Threads vs processes
-- Thread safety and critical sections
-- Synchronization primitives (mutexes, semaphores, spinlocks, RWLocks)
-- Condition variables and monitors
-- Deadlock, livelock, starvation (detection and prevention)
-- Race conditions and data races
-- Atomic operations and memory ordering
-- Lock-free and wait-free algorithms
-- Thread pools and worker queues
-- Futures, promises, async/await
-- Actor model and CSP (Communicating Sequential Processes)
-- Coroutines and green threads
-- Parallel algorithms and map-reduce
-
 ## **Rate Limiting & Traffic Control**
 - **Token bucket algorithm**
 - **Leaky bucket algorithm**
@@ -126,17 +136,6 @@
 - Cache warming and preloading
 - HTTP caching (ETags, Cache-Control)
 
-## **Systems Programming**
-- Process management and lifecycle
-- Inter-process communication (pipes, shared memory, message queues, sockets)
-- Signals and signal handling
-- File descriptors and file I/O
-- Buffered vs unbuffered I/O
-- Select, poll, epoll, kqueue (event-driven I/O)
-- Memory-mapped files
-- System calls and kernel interaction
-- Daemon processes
-- Process scheduling
 
 ## **Network Programming**
 - OSI and TCP/IP models
@@ -276,7 +275,7 @@
 - Resource cleanup (RAII, defer, finally)
 
 
-## Backend Concepts - Exhaustive List
+# Backend Concepts - Exhaustive List
 
 ### Load Balancing & Traffic Management
 - Load Balancer
@@ -2543,7 +2542,3 @@
 *   Rekognition - Image and Video Analysis
 *   Comprehend - Natural Language Processing
 *   Chime - Video Conferencing, Communication Services
-
-
-
-This list is very comprehensive. A senior principal architect will need a deep understanding of these services and the systems concepts behind them to design and implement robust, scalable, and secure AWS solutions.

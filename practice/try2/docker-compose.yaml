@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - server1
+      - server2
+    networks:
+      - backend-network
+
+  server1:
+    image: web-app
+    environment:
+      - SERVER_ID=1
+    ports:
+      - "8001:8000"
+    networks:
+      - backend-network
+
+  server2:
+    image: web-app
+    environment:
+      - SERVER_ID=2
+    ports:
+      - "8002:8000"
+    networks:
+      - backend-network
+
+networks:
+  backend-network:
+    driver: bridge
