@@ -44,8 +44,8 @@ flask
 - docker build -t web-app .
 
 - Run two instances with different environment variables
-    - docker run -d --name server1 --network backend-network -e SERVER_ID=1 -p 8000:80 web-app
-    - docker run -d --name server2 --network backend-network -e SERVER_ID=2 -p 8001:80 web-app
+    - docker run -d --name server3 --network backend-network -e SERVER_ID=1 -p 8000:80 web-app
+    - docker run -d --name server4 --network backend-network -e SERVER_ID=2 -p 8001:80 web-app
 
 6. compose
 ```docker
@@ -112,3 +112,8 @@ docker-compose up -d
 
 8. test
 curl http://localhost
+
+9. restart
+docker-compose down
+docker-compose rm -f
+docker rm $(docker ps -q) -f
