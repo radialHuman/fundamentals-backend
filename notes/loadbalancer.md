@@ -86,6 +86,25 @@
             - there is no way that can be done in this
         - no caching : cant see data so cant caching, doesn know what to and what not to
 - Layer 7 (application) : can see the data and make a smart routing
+    - if allowed it can look at the data and decrypt it to decide how to route based on routing mechanism "/"
+        - using tls and certification
+    - it looks at the ip address for the target and reads where the api whats to get info from
+        - then establishes connection between the client and itself
+        - takes the data changes the ip address in tcp packet from it self to the other backend server
+            - making it act as two different connections even while routing
+            - in this process ehaders or the content might change based on the nature of the backend servers requirement
+    - pros
+        - smart loadbalancing
+        - microservices compatible
+        - routing based on data
+        - caching : because data is visible
+    - Cons
+        - expensive : time as it looks at the data
+        - decrypts data, terminates as tls : certificates are visible
+        - two tcp connections : more persistence, time out issues
+        - must share tls certificate #doubt
+        - less secure, data visible
+    #TODO implement it
 
 ### 14. Performance Characteristics
 - How does it perform under different load conditions?
